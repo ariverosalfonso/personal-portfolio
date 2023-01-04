@@ -1,3 +1,25 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  
+  <ion-menu contentId="menu-content" menuId="menu-content" side="start" >
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Portafolio</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-menu-toggle *ngFor="let option of menuItems">
+        <ion-item (click)="setTitle(option.title)" [routerLink]="option.path"  routerDirection="root"
+        routerLinkActive="active-item"
+        [routerLinkActiveOptions]="{exact:true}">
+          {{option.title}}
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+
+  <app-header></app-header> 
+
+  <ion-router-outlet  id="menu-content"></ion-router-outlet>
 </ion-app>
+

@@ -1,0 +1,27 @@
+<div class="margin-height">
+  <ion-row>
+    <ion-col>
+      <h1 class="title">Proyectos</h1>
+    </ion-col>
+  </ion-row>
+  <swiper #swiper [config]="config" [allowTouchMove]="true">
+    <ng-template swiperSlide *ngFor="let project of projects">
+      <a href="{{ project.url }}" target="_blank">
+        <ion-icon slot="end" name="open-outline"></ion-icon>
+       
+      <ion-card>
+        <ion-card-header>
+          <h1 style="font-weight: bold">{{ project.title }}</h1>
+          <img [src]="project.img" />
+        </ion-card-header>
+        <ion-card-subtitle>
+          <ion-label>{{ project.description }}</ion-label>
+        </ion-card-subtitle>
+        <ion-card-content>
+
+        </ion-card-content>
+      </ion-card>
+    </a>
+    </ng-template>
+  </swiper>
+</div>

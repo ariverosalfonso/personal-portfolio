@@ -1,0 +1,37 @@
+[
+  {
+    "frontend": [
+      {
+        "language": "../../../assets/language/html.png"
+      },
+      {
+        "language": "../../../assets/language/css.png"
+      },
+      {
+        "language": "../../../assets/language/javascript.jpg"
+      },
+      {
+        "language": "../../../assets/language/angular.png"
+      },
+      {
+        "language": "../../../assets/language/ionic.png"
+      }
+    ]
+  },
+  {
+    "backend": [
+      {
+        "language": "../../../assets/language/sql.png"
+      },
+      {
+        "language": "../../../assets/language/mongo.png"
+      },
+      {
+        "language": "../../../assets/language/node.png"
+      },
+      {
+        "language": "../../../assets/language/net.png"
+      }
+    ]
+  }
+]

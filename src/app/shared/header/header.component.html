@@ -1,3 +1,40 @@
-<p>
-  header works!
-</p>
+<ion-header class="mobile-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="menu-content"></ion-menu-button>
+      <h1 color="danger">
+        {{title}}
+      </h1>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="briefcase" color="principal"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-header class="header ion-align-items-center" [translucent]="true">
+  <ion-toolbar class="toolbar-background">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <ion-item class="ion-wrap">
+            <ion-icon class="space" name="briefcase" color="principal"></ion-icon>
+            <ion-label color="dark">PORTAFOLIO</ion-label>
+          </ion-item>
+          
+        </ion-col>
+        <ion-col size="2">
+            <ion-button fill="clear" color="dark" routerLink="/home" routerDirection="root"
+             routerLinkActive="link-active"  [routerLinkActiveOptions]="{exact:true}">
+              Inicio
+            </ion-button>
+    
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  
+</ion-header>
+

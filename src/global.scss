@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+// global.scss
+@import "swiper/css";
+@import "@ionic/angular/css/ionic-swiper";
+@import "swiper/css/bundle";
+
+a .network {
+  display: inline-block;
+  margin: 10px;
+  --border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.padding-body {
+  padding: 5vh;
+}
+
+ion-item {
+  --border-color: transparent;
+}
+
+@font-face {
+  font-family: "Quicksand", sans-serif;
+  src: url("/assets/Quicksand/static/Quicksan-Bold.ttf");
+}
+* {
+  font-family: "Quicksand";
+}

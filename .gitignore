@@ -1,3 +1,8 @@
 node_modules
 environments
 .angular
+.firebaserc
+.firebase
+firebase.json
+.github
+www

@@ -1,0 +1,22 @@
+
+h2{
+    padding-left: 2vh;
+    text-decoration-line: underline;
+
+}
+ion-toolbar {
+    --background:var(--ion-color-black);
+    color: var(--ion-color-light);
+}
+ion-item{
+    --background:var(--ion-color-black);
+    color:  var(--ion-color-light);
+}
+
+a {
+    text-decoration: none;
+    color:  var(--ion-color-light);
+    padding-left: 15px;
+}
+
+  

@@ -1,0 +1,49 @@
+
+ a:target {
+    background-color: yellow;
+  }
+  .space {
+    margin-right: 5px;
+  }
+  
+@media (min-width:768px) {
+    .mobile-header {
+        display: none;
+    }
+    .header{
+        display: flex;
+        background: var(--ion-color-headercolor);
+    
+    }
+    img {
+        height: 20px;
+        margin-left: 40px;
+        padding-right:10px ;
+    }
+    ion-buttons  {
+        margin-top: 1vh;
+    }
+    ion-label {
+        color: #eb445a;
+    }
+
+}
+
+@media (max-width:768px) {
+    .mobile-header {
+        display: block;
+    }
+    .header {
+        display: none;
+        background: var(--ion-color-headercolor);
+    }
+    img {
+        height: 25px;
+        filter: drop-shadow(1px 1px 30px red);
+     
+    }
+    
+}
+.link-active {
+    border-bottom: 2px solid var(--ion-color-principal);
+}

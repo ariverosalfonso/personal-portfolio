@@ -1,20 +1,75 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+<section>
+  <ion-item class="mt-5">
+    <ion-icon *ngIf="darkMode" slot="end" name="moon"></ion-icon>
+      <ion-icon *ngIf="!darkMode" slot="end" name="sunny"></ion-icon>
+    <ion-toggle slot="end"  (ionChange)="change($event)"></ion-toggle>
+  </ion-item> 
+  <!-- <ion-item>
+    <ion-icon *ngIf="darkMode" slot="end" name="moon"></ion-icon>
+      <ion-icon *ngIf="!darkMode" slot="end" name="sunny"></ion-icon>
+    <ion-toggle slot="end"  (ionChange)="change($event)"></ion-toggle> -->
+      <!-- <ion-checkbox slot="end" (ionChange)="change($event)" class="checkbox-icon"></ion-checkbox>
+      <ion-icon *ngIf="darkMode" slot="end" name="moon"></ion-icon>
+      <ion-icon *ngIf="!darkMode" slot="end" name="sunny"></ion-icon> -->
+    <!-- <ion-icon slot="start" name="moon"></ion-icon>
+    <ion-label>Toogle Dark Mode</ion-label>
+     -->
+  <!-- </ion-item> -->
+  <div class="content">
+    <div class="header-title">
+    <ion-row >
+      <ion-col size="6">
+        <div class="center-img">
+        <img src="./../../../assets/profile.jpg" alt="profile-photo">
+      </div>
+      </ion-col>
+        <ion-col size="6"  sizeSm="6" sizeXs="10" sizeMd="6" sizeLg="6" sizeXl="6" >
+          <div class="margin-title">
+          <h1 class="title">  ¡HOLA! SOY  </h1>
+          <h2 class="name "><span>&#160;</span> ALEJANDRA  </h2>
+          <h2 class="name lastname"><span>&#160;</span> RIVEROS  </h2>
+
+        </div>
+      </ion-col>      
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" style="text-align: center;">
+        <a href="https://www.linkedin.com/in/alejandra-r-85a973172/" class="network"  target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/ariverosalfonso" class="network" target="_blank" >
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://www.tiktok.com/@code_aleja?is_from_webapp=1&sender_device=pc" class="network" target="_blank" >
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col size="12">
+    <hr>
+    </ion-col>  
+    </ion-row>
   </div>
+    <app-about-me id="section2"></app-about-me>
+    <app-knowledge></app-knowledge>
+    <app-projects id="section3"></app-projects>
+    <app-footer></app-footer>
+  </div>
+  
+  
+  <!-- <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+    fill="#FFF0F0"
+    fill-opacity="1"
+    d="M0,160L34.3,149.3C68.6,139,137,117,206,133.3C274.3,149,343,203,411,213.3C480,224,549,192,617,176C685.7,160,754,160,823,181.3C891.4,203,960,245,1029,266.7C1097.1,288,1166,288,1234,261.3C1302.9,235,1371,181,1406,154.7L1440,128L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+    ></path>
+  </svg> 
+   -->
+  
+</section>
 </ion-content>
+

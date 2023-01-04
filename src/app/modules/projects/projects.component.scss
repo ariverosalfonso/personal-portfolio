@@ -1,0 +1,39 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.swiper .swiper-slide img {
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  max-height: 100%;
+}
+.margin-height swiper {
+  margin: 50px 50px;
+}
+.title {
+  text-align: center;
+}
+
+.transparent-background {
+  --background: transparent;
+  --color: var(--ion-color-dark);
+}
+
+ion-card-content {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+}
